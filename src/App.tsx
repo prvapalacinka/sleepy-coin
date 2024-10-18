@@ -1,7 +1,7 @@
 import React from 'react';
 import Lottie from 'lottie-react';
-import { FaTelegram, FaTwitter } from 'react-icons/fa'; // Import icons
-import catAnimation from './cat-lottie.json'; // Placeholder Lottie animation
+import { FaTelegram, FaTwitter } from 'react-icons/fa';
+import catAnimation from './cat-lottie.json';
 
 import './App.css';
 
@@ -9,20 +9,15 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        {/* Title */}
         <h1>Sleepy Coin</h1>
 
         {/* Cat Image/Animation */}
         <div className="cat-section">
-          {/* Lottie animation as placeholder */}
           <Lottie animationData={catAnimation} style={{ height: 300, width: 300 }} />
-
-          {/* Space to add your own cat image */}
-          {/* Replace the below img tag with your own image */}
           <img
-            src="/path-to-your-cat-image.jpg"
+            src="/sleepy-coin-logo.jpeg"
             alt="Sleepy Cat"
-            style={{ height: 300, width: 300, display: 'none' }} // Add your cat image here
+            style={{ height: 300, width: 300, display: 'none' }}
           />
         </div>
 
