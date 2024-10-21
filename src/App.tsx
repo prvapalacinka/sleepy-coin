@@ -3,7 +3,8 @@ import './App.css';
 import Lottie from 'lottie-react';
 import { FaTelegram, FaTwitter } from 'react-icons/fa';
 import catAnimation from './cat-lottie.json';
-import myCatPhoto from './sleepy-coin-logo.jpeg';
+import sleepyCatPhoto from './sleepy-coin-logo.jpg';
+import awakeCatPhoto from './awake-cat-photo.jpeg';
 import { handleThemeToggle } from './themeToggle';
 
 const App: React.FC = () => {
@@ -19,7 +20,7 @@ const App: React.FC = () => {
       </div>
 
       <div className="image-container">
-        <img src={myCatPhoto} alt="My Cat" className="cat-photo" />
+        <img src={theme === 'light-theme' ? awakeCatPhoto : sleepyCatPhoto} alt="My Cat" className="cat-photo" />
         <button className="button" onClick={() => handleThemeToggle(theme, setTheme, setButtonText)}>
         {buttonText}
         </button>

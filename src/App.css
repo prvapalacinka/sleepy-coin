@@ -13,7 +13,7 @@
   --accent-color: var(--sandy-brown);
 
   /* Dark theme colors */
-  --dark-background: #222222ff;
+  --dark-background: #032034;
   --dark-text: #9599b5ff;
   --dark-accent: #db6618ff;
   --dark-highlight: #7d808eff;
@@ -193,7 +193,8 @@ body.dark-theme .lottie-animation {
 }
 
 .cat-photo {
-  width: 150px;
+  width: 300px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
